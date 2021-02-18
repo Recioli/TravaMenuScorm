@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="json" href="manifest.json">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="menu.css">
+    <title></title>
+  </head>
+  <body>
+
+    <div class = "box ">
+      <div class="dispNone" id = "caixa">
+        <p style = "color:white; background-color: black;">Olá Aprendiz! Caso você não esteja no encontro correto, procure sua tutora no chat para obter orientações.</p>
+        <input id = "senha" type="text" placeholder="insira a senha" value="">
+        <button type="button" name="button" onclick="setaEncontroLs(),reloadPage()">validar</button>
+
+      </div>
+
+      <div id="abreFerramenta" onclick="abreCaixa()"style="background-image:   url( image/ajuda.png) ; width: 35px; height: 36px; position: absolute; z-index: 100; right:0px; padding:5px;">
+
+      </div>
+
+
+  <div class = "container-fluid header">
+      <div class = titulo>
+        <h1><span><img  class="img-fluid logo" src="image/logo-526x366.png" alt=""></span><strong>Aprendiz</strong> <span><sub>Capacitação regular</sub></span> </h1>
+      </div>
+  </div>
+
+  <div linha><hr></div>
+
+  <!--todos os botões são criados aqui dinamicamente -->
+  <div class="container d-flex flex-column" id="indice">  </div>
+
+
+  <div class="modal fade" id= 'Modal' tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Olá Aprendiz!</h5>
+          <button type="button" class="close" data-dismiss="modal" onclick=" reloadPage()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="respModal">...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick=" reloadPage()">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+
+  <button type="button" class="btn btn-light invisivel"  VALUE = "  Done " onClick = "ConcluiSCO()">Habilitar próxima capacitação</button>
+
+
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" src="GetDate7.js"></script>
+<script type="text/javascript" src="AvancaSCO7.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript" src="controleBt.js"></script>
+<script type="text/javascript" src="links.js"></script>
+<script type="text/javascript" src="ferramenta.js"></script>
+<script type="text/javascript" src="scripts\APIWrapper.js"></script>
+<script type="text/javascript" src="scripts\SCOFunctions.js"></script>
+
+
+
+
+  </body>
+</html>

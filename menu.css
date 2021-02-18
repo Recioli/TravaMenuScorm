@@ -1,0 +1,87 @@
+
+@font-face {
+  font-family: myFirstFont;
+  /*src: url(sansation_light.woff);*/
+  src:url(font/Courgette-Regular.ttf);
+}
+
+
+
+
+
+.btn-danger,.btn-primary{
+  margin: .3%;
+  width: 70%;
+  box-shadow: 2px 2px black;
+
+}
+
+.btn-light{
+  width: 30%;
+  margin-top:1.5%;
+  margin-right: 4.5%;
+}
+.box{
+  text-align: center;
+  /*background-color:rgb(27, 25, 53);*/
+  background-image: url("image/br.jpg");
+  /*background-color:black;*/
+}
+
+.invisivel{
+ visibility: hidden;
+}
+.dispNone{
+  display: none;
+}
+
+@keyframes mymove {
+  from {left: 2000px;}
+  to {left: 0px;}
+}
+
+.header{
+  text-shadow: 2px 2px black;
+  color:white;
+  background-image: url("image/imgtop.jpg");
+  background-repeat: no-repeat;
+  display: list-item;
+  box-shadow: 2px 2px black;
+
+}
+
+  hr{
+
+    margin-top: 0;
+    background-color:lightslategrey;
+    height: 10px;
+    box-shadow: 2px 2px black;
+  }
+
+.titulo{
+
+text-align: left;
+position: relative;
+animation: mymove 3s;
+
+}
+
+sub{
+  font-family: myFirstFont;
+}
+
+
+.logo{
+
+  width: 3em;
+}
+
+.footer{
+  height: 5em;
+  background-image: url("image/imgtop.jpg");
+}
+
+.disabled {
+  opacity: 0.6;
+
+}
